@@ -1,0 +1,18 @@
+# mysql -u root -p
+show databases;
+create database akademik;
+use akademik;
+create table mahasiswa(
+    -> nim varchar(5) not null,
+    -> nama varchar(50) not null,
+    -> jkel varchar(1) not null,
+    -> alamat text,
+    -> tgllhr date,
+    -> primary key(nim)
+    -> );
+ insert into mahasiswa values('MHS01','siti aminah','p','solo','195-10-01');
+ insert into mahasiswa values('MHS02','Rita','p','Solo','1999-01-1');
+ insert into mahasiswa values('MHS03','Amiruddin','L','Semangat','1998-08-11');
+ insert into mahasiswa values('MHS04','Siti Maryam','P','Jakarta','1995-04-15');
+ select * from mahasiswa;
+ select * from mahasiswa where alamat='solo';
