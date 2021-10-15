@@ -1,0 +1,14 @@
+# mysql -u root -p
+use akademik;
+show databases;
+select * from mahasiswa;
+alter table mahasiswa add prodi varchar(50) after nama;
+update mahasiswa set prodi="Teknik Informatika" where nim='MHS01';
+update mahasiswa set prodi="Pendidikan Bahasa Inggris" where nim='MHS02';
+update mahasiswa set prodi="Pendidikan Bahasa Indonesia" where nim='MHS03';
+update mahasiswa set prodi="Teknik Induksi" where nim='MHS04';
+select * from mahasiswa;
+select * from mahasiswa order by name asc;
+select * from mahasiswa where nim='MHS01';
+select * from mahasiswa where jkel='p';
+select nim, nama, prodi from mahasiswa;
